@@ -1,0 +1,84 @@
+.header{
+    background-image: url(img/jaguar-etype.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    font-family: $my-serif,bold;
+    color: white;
+    
+}
+@media (min-width: 768px) {
+    .header{
+        height: 620px;
+
+    }
+}
+@media (max-width: 768px) {
+    .header{
+        height: 300px;
+    }
+}
+
+body {
+    background-color: $my-background;
+    font-family: $my-serif;
+    h3{
+        text-align:center;
+    }
+}
+.btn-primary{
+    color: $link-color;;
+    border: 0px;
+    background-color: $hover-color;
+    font-family: $my-sans;
+    &:hover{
+        color: lighten($link-color,50%);
+        background-color: $hover-color;
+    }
+}
+.no-padding{
+    padding-left:0;
+    padding-right:0;
+}
+.caption {
+    margin-bottom: 20px;
+}
+.shows{
+    background-color:$card-background;
+    font-family: $my-sans;
+    h5{
+        color:#b30000;
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+.tickets{
+    background-color:$card-background;
+    text-align: center;
+    padding: 10px;
+    font-family: $my-sans;
+ 
+}
+
+.btn-tickets{
+    background: linear-gradient(to bottom, #00cc66 0%, #009933 100%);
+    color: $button-color;
+    font-size: 20px;
+    padding: 8px 50px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 5px green;
+    &:hover{
+        background:linear-gradient(to bottom, #999999 3%, #737373 100%);
+        box-shadow: 0px 5px #4d4d4d;
+    }
+}
+footer{
+    background-color:$footer-color;
+    padding:20px;
+    color: $my-background;
+    font-family: Arial, Helvetica, sans-serif
+}
